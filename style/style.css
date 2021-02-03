@@ -429,15 +429,16 @@ footer .extra-pages2 h1 {
     max-width: 700px;
     margin-top: 60px;
   }
-  footer .footer-info {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    text-align: left;
-    margin: 0 auto;
+  footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
-  footer .extra-pages,
-  footer .extra-pages2 {
+  .extra-pages2 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     text-align: center;
     margin: 0 auto;
   }
