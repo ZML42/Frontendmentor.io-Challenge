@@ -1,0 +1,337 @@
+// Primary Colors
+$Intro-Email: #1c2431;
+$main-bg: #181f2a;
+$footer-bg: #0b1523;
+$testimonail: #202a3c;
+
+//Accent
+$inside1: #65e2d9;
+$inside2: #339ecc;
+$error: #ff4242;
+
+//Text Variables
+.main-text {
+  font-size: 1.5625rem;
+  font-weight: 700;
+  color: white;
+}
+.sub-text {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: white;
+}
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+ul,
+li {
+  text-decoration: none;
+}
+.container {
+  max-width: 1444px;
+  margin: 0 auto;
+}
+body {
+  background-color: $main-bg;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  margin: 0 auto;
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1.5625rem 0.5rem 1.5625rem;
+  align-items: center;
+
+  .logo {
+    img {
+      width: 100px;
+    }
+  }
+  .pages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5625rem;
+  }
+}
+.hero {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+  .hero-img img {
+    width: 70%;
+  }
+  .hero-cta {
+    padding: 1rem;
+    height: 50px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 20px;
+    color: white;
+    background: linear-gradient(to left, $inside1, $inside2);
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+  }
+}
+.features-grid {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  .feature-img img {
+    margin-top: 3rem;
+  }
+  .feature-header {
+    margin-top: 1.5rem;
+  }
+  .feature-sub-text {
+    margin-top: 30px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}
+.productive {
+  margin-top: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  .productive-img img {
+    width: 70%;
+  }
+  .text-container {
+    .productive-main-text {
+      font-size: 25px;
+      color: white;
+      font-weight: 700;
+    }
+    text-align: center;
+    margin: 0 auto;
+    .main-text,
+    .sub-text {
+      text-align: left;
+    }
+  }
+  .fylo-works {
+    position: relative;
+    color: #2c9d99;
+    text-align: left;
+    border-bottom: 3px solid #29716e;
+    width: 250px;
+    &::after {
+      position: absolute;
+      content: "";
+      display: block;
+      background: url(/images/icon-arrow.svg);
+      top: 5px;
+      right: -20px;
+      height: 50px;
+      width: 50px;
+      background-repeat: no-repeat;
+    }
+  }
+}
+.quote-grid1,
+.quote-grid2,
+.quote-grid3 {
+  display: grid;
+  grid-template-rows: 1fr;
+  background-color: $testimonail;
+  margin: 20px auto;
+  width: 400px;
+  height: 170px;
+  border-radius: 10px;
+  padding: 10px;
+
+  .main-text {
+    font-size: 15px;
+    text-align: left;
+  }
+  .author {
+    display: flex;
+    justify-content: space-between;
+    .text-auth {
+      display: flex;
+      flex-direction: column;
+      float: left;
+      text-align: left;
+      margin-top: 10px;
+      margin-right: 160px;
+    }
+
+    .main-auth {
+      font-size: 15px;
+      color: white;
+      font-weight: 400;
+    }
+    .sub-auth {
+      margin-top: -10px;
+      font-size: 13px;
+      color: white;
+    }
+    img {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      margin-left: 10px;
+    }
+  }
+}
+.early-access {
+  margin: 0 auto;
+  background-color: $Intro-Email;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  .main-text {
+    font-size: 25px;
+  }
+  .sub-text {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  input[type="email"] {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: black;
+    border-radius: 50px;
+    border: none;
+    font-weight: 700;
+  }
+  .access-cta {
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 5px;
+    text-align: center;
+    font-size: 15px;
+    background: linear-gradient(to right, $inside1, $inside2);
+    border-radius: 50px;
+    border: none;
+    height: 50px;
+  }
+}
+footer {
+  background-color: $footer-bg;
+  color: white;
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    img {
+      padding: 20px;
+      width: 300px;
+      float: left;
+    }
+    .location {
+      font-size: 10px;
+      float: left;
+      text-align: left;
+      padding: 20px;
+    }
+    .phone {
+      font-size: 10px;
+      float: left;
+      text-align: left;
+      padding: 20px;
+    }
+    .email {
+      font-size: 10px;
+      float: left;
+      text-align: left;
+      padding: 20px;
+    }
+  }
+  .extra-pages1,
+  .extra-pages2 {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    h1 {
+      font-size: 17px;
+      text-align: left;
+      padding: 0px 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 760px) {
+  .footer-info {
+    max-width: 600px;
+    .phone {
+      margin-top: -30px;
+    }
+    .email {
+      margin-top: -30px;
+    }
+  }
+  .extra-pages {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 940px) {
+  .hero {
+    h1.main-text,
+    h1.sub-text {
+      max-width: 50%;
+      margin: 15px auto;
+    }
+    .hero-cta {
+      margin-top: 20px;
+    }
+  }
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    .acces-file {
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+  }
+  .productive {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    .text-container {
+      margin-top: 10px;
+    }
+    .productive-img img {
+      align-items: center;
+      margin-top: 20px;
+    }
+  }
+  .quotes {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .early-access {
+    max-width: 700px;
+  }
+}
+@media only screen and (min-width: 1100px) {
+  .hero img {
+    max-width: 700px;
+    margin-top: 60px;
+  }
+
+  footer {
+    .footer-info {
+      align-items: center;
+      text-align: left;
+      margin: 0 auto;
+    }
+
+    .extra-pages,
+    .extra-pages2 {
+      text-align: center;
+      margin: 0 auto;
+    }
+  }
+}
