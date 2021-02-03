@@ -260,6 +260,15 @@ footer {
 }
 
 @media only screen and (min-width: 760px) {
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .extra-pages2 {
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+  }
   .footer-info {
     max-width: 600px;
     .phone {
